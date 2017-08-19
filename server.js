@@ -17,13 +17,13 @@ app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/app/views/index.html')); // Set index.html as layout
 });
 
-mongoose.connect('mongodb://127.0.0.1:27017/final', function(err) {
+/* mongoose.connect('mongodb://127.0.0.1:27017/final', function(err) {
     if (err) {
         console.log('Not connected to the database: ' + err); // Log to console if unable to connect to database
     } else {
         console.log('Successfully connected to MongoDB'); // Log to console if able to connect to database
     }
-});
+}); */
 
 // Server listen port...
 var port = 4000;
