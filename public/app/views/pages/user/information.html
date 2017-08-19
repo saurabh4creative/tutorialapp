@@ -1,0 +1,35 @@
+<h3>Profile Information</h3>
+<div class="row">
+   <div class="col-lg-6">
+   	    <div class="col-lg-" ng-sontroller="users">
+	      <input type="file" file-model="myFile"/><br>
+	      <button ng-click="uploadFile()">Upload</button>
+	    </div>
+
+	    <div class="col-lg-" style="margin-top: 20px;">
+	      <div class="alert alert-danger">
+	            {{msg}}
+	      </div> 
+	    </div>
+   </div>
+   
+   <div class="col-lg-6">
+
+        <div class="images">
+        	 <img class="img-responsive" src="uploads/{{image}}">
+        </div>
+
+   </div>
+
+</div>
+
+
+<!--form id="upload-photos" method="post" action="/upload_photos" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="photos-input">File input</label>
+        <input id="photos-input" type="file" name="photos[]" multiple="multiple" >
+        <p class="help-block">You can upload up to 3 files.</p>
+    </div>
+    <input type="hidden" name="csrf_token" value="just_a_text_field" />
+    <input class="btn btn-default" type="submit" name="Photo Uploads" value="Upload Photos" />
+</form-->

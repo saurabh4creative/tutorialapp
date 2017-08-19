@@ -1,0 +1,19 @@
+<h3>Login Page</h3>
+
+<div class="form row">
+    <form class="col-lg-4" ng-submit="login.log_data(data);">
+    	<label>Username</label>
+	    <input type="text" ng-model="login.data.username" name="username" class="form-control">
+	    <label>Password</label>
+	    <input type="text" ng-model="login.data.password" name="password" class="form-control">
+	    <br>
+	    <button class="btn btn-primary" type="submit">Submit</button>
+      <button class="btn btn-info" ng-click="forget();" type="button">Forget Password</button>
+      <button class="btn btn-danger" type="button">Forget UserName</button>
+    </form>
+    <div class="col-lg-8">
+       <div class="alert alert-info">
+            {{message}}
+       </div>
+    </div>
+</div> 

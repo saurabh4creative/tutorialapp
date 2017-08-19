@@ -1,0 +1,21 @@
+<h3>Registration Page</h3>
+
+<div class="form row">
+    <form class="col-lg-4" ng-submit="register.reg_data(data);">
+    	<label>Name</label>
+	    <input type="text" ng-model="register.data.name" name="name" class="form-control">
+	    <label>Email</label>
+	    <input type="text" ng-model="register.data.email" name="email" class="form-control">
+	    <label>Username</label>
+	    <input type="text" ng-model="register.data.username" name="username" class="form-control">
+	    <label>Password</label>
+	    <input type="text" ng-model="register.data.password" name="password" class="form-control">
+	    <br>
+	    <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <div class="col-lg-8">
+       <div class="alert alert-info">
+            {{message}}
+       </div>
+    </div>
+</div> 

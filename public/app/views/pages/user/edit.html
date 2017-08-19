@@ -1,0 +1,43 @@
+<h3>Edit Profile</h3>
+<style type="text/css">
+	.table td{vertical-align: middle !important; border:none !important;}
+</style>
+<div class="row">
+    <div class="col-lg-5">
+      
+      <form ng-submit="editrel(names, unames, email, user);">
+         <table class="table table-bordered" style="border:none;">
+			 <tbody>
+			 	<tr>
+			 		<td>Name</td>
+			 		<td><input ng-model="names" class="form-control" type="text" name="name"></td>
+			 	</tr>
+			 	<tr>
+			 		<td>Username</td>
+			 		<td><input ng-model="unames" disabled="" class="form-control" type="text" name="username"></td>
+			 	</tr>
+			 	<tr>
+			 		<td>E-mail</td>
+			 		<td><input class="form-control" disabled="" type="email" name="email" ng-model="email"></td>
+			 	</tr>
+			 	<tr>
+			 		<td>User View</td>
+			 		<td>
+			 		  <select class="form-control" ng-model="user" ng-options="x for x in cars"></select>
+					</td>
+			 	</tr>
+			 	<tr>
+			 		<td>
+			 			 <button class="btn btn-primary" type="submit">Submit</button> 
+			 		</td>
+			 	</tr>
+             </tbody>
+		</table>	
+      </form>
+
+      <div class="alert alert-danger">
+            {{datas}}
+      </div> 
+      
+  </div>
+</div>
